@@ -16,6 +16,10 @@ server.use(express.static('./public'));
 server.get('/test', (request, response) => {
     response.send('its working');
 });
+server.post('/contact', (request, response) => {
+    response.send('its working');
+});
+
 
 server.listen(PORT, () => {
     console.log('listening on port', PORT);
